@@ -14,7 +14,10 @@ csv_file_path='data.csv'
 
 @app.route("/")
 def index():   
-    return render_template("dashoard.html")
+    try:
+        return render_template("dashoard.html")
+    except Exception as e:
+        return f"error {e}"
 
 @app.route("/datasend",methods=['POST'])
 def datasend():
