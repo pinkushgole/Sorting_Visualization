@@ -17,7 +17,7 @@ def index():
     try:
         return render_template("dashoard.html")
     except Exception as e:
-        return f"error {e}"
+        return f"error fatch : {e}"
 
 @app.route("/datasend",methods=['POST'])
 def datasend():
