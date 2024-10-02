@@ -62,3 +62,5 @@ def datasend():
         return "An error occurred while processing your request.", 500
 
 # ================ app run ===============
+if __name__=='__main__':
+    app.run(debug=True)
