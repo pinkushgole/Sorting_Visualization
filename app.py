@@ -54,7 +54,7 @@ def datasend():
 
         print(f"Sorted List: {sort_list}")
 
-        return render_template("dashoard.html", data=sort_list, sorting=new_sorting)  # Ensure template name is correct
+        return render_template("dashboard.html", data=sort_list, sorting=new_sorting)  # Ensure template name is correct
 
     except Exception as e:
         # Log the exception details
