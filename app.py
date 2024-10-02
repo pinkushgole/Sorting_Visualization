@@ -15,7 +15,7 @@ csv_file_path='data.csv'
 @app.route("/")
 def index():   
     try:
-        return render_template("dashoard.html")
+        return render_template("dashboard.html")
     except Exception as e:
         return f"error fatch : {e}"
 
